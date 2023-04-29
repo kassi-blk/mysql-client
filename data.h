@@ -4,7 +4,7 @@
 #include <gtk/gtk.h>
 #include <mysql.h>
 
-/* A data which will passed everywhere the auxiliary objects is needed. */
+// A data which will passed everywhere the auxiliary objects is needed
 struct wrap_data {
     GObject *app;
     GObject *win;
@@ -15,10 +15,10 @@ struct con_data {
     GtkWidget *host;
     GtkWidget *uname;
     GtkWidget *passw;
-    GList *clist; /* Keep an array of the server structures. */
+    GList *clist; // Keep an array of the server structures
     MYSQL *con;
 
-    /* An extra. */
+    // An extra
     GtkTreeView *cview;
     GtkListStore *cstore;
 };
